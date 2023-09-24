@@ -1,77 +1,50 @@
-/* body {
-
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    padding-left: 20px;
     text-align: center;
-    justify-items: center;
-    
 }
 
-.entradas {
-    display: flex;
+li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.entradas input{
     align-items: center;
-    margin: auto;
-    justify-content: center;
-}
 
-
-
-.entradas input {
-    padding: 0 5px;
-    height: 30px;
-    margin: 0 12px;
-    width: 190px;
     border-style: none;
     background-color: #d9d9d9;
-    border-radius: 2px;
+    margin: 0 20px;
 }
 
-#precio {
-    margin-left: 17px;
+.entradas #txtUser {
+    margin-left: 47px;
 }
 
-#lista {
-    list-style: none;
-    padding-inline-start: 40%;
-    text-align: start;
+.botones{
+    display: block;
+    align-content: center;
+    margin-top: 10px;
 }
 
-
-.botonCalcular {
-    font-size: medium;
+button{
+    border-radius: 15px;
     border-style: none;
-    border-radius: 20px;
-    background-color: #620d50;
+    background-color: #620d4f;
     color: white;
-    padding: 7px 70px;
-    margin: 30px 7px;
+    margin: 5px;
+    width: 170px;
+    height: 20px;
 } */
-body{
-    margin: 0;
-    padding: 0;
-    
-}
-ion-content{
-    height: 100%;
-}
-
-ion-col{
-    border: solid 1px black;
-    background-color: antiquewhite;
-    text-align: center;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-}
-
-
-ion-grid {
-    --ion-grid-column-padding: auto;
-    width: 100vw;
-    height: 100vh;
-}
-
-@media screen and (min-width: 710px){
-    ion-col{
-        padding-top: unset;
-        padding-bottom: unset;
-    }
-}

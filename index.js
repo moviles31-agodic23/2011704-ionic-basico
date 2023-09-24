@@ -1,4 +1,3 @@
-
 const lista = document.getElementById('lista');
 const total = document.getElementById('total');
 

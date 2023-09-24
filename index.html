@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket de compra</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
-</head>
-<body id="body">
-    <ion-content>
-        <ion-grid>
-            <ion-row>
-                <ion-col>Fila 1</ion-col>
-                <ion-col>Fila 2</ion-col>
-                <ion-col>Fila 3</ion-col>
-                <ion-col>Fila 4</ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col>Fila 1</ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col>Fila 1</ion-col>
-                <ion-col>Fila 2</ion-col>
-                <ion-col>Fila 3</ion-col>
-                <ion-col>Fila 4</ion-col>
-                <ion-col>Fila 5</ion-col>
-                <ion-col>Fila 6</ion-col>
-                <ion-col>Fila 7</ion-col>
-                <ion-col>Fila 8</ion-col>
-                <ion-col>Fila 9</ion-col>
-                <ion-col>Fila 10</ion-col>
-                <ion-col>Fila 11</ion-col>
-                <ion-col>Fila 12</ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col size="6">Fila 1</ion-col>
-                <ion-col size="2">Fila 2</ion-col>
-                <ion-col size="3">Fila 3</ion-col>
-                <ion-col size="1">Fila 4</ion-col>
-            </ion-row>
-        </ion-grid>
-    </ion-content>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css">
     
+    <title>Practica 5</title>
+</head>
+<body>
+    <ion-app>
+      <ion-header [translucent]="true">
+        <ion-toolbar>
+          <ion-title>Ticket de compra</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content [fullscreen]="true">
+        <ion-header collapse="condense">
+          <ion-toolbar>
+            <ion-title size="large">Ticket de compra</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-grid [fixed]="true">
+          <ion-col offset="0" size="12" size-md="6" offset-md="3">
+            <ion-item>
+              <ion-input label="Articulo" labelPlacement="stacked"  id="articulo"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input label="Precio" labelPlacement="stacked"  id="precio"></ion-input>
+            </ion-item>
+            <hr>
+            <ion-button color="tertiary" shape="round" onclick="calcularTotal()">Agregar</ion-button>
+            <hr>
+            <ion-label><h1>Tu Ticket</h1></ion-label>
+            <ul id="lista"></ul>
+            <ion-item>
+              <ion-input [disabled]="true" disabled></ion-input>
+            </ion-item>
+            <hr>
+            <ion-label id="txtPrecio"><b>TOTAL $<span id="total">0</span></b></ion-label>
+          </ion-col>
+          
+
+        
+        </ion-grid>
+      </ion-content>
+      
+    </ion-app>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
     <script src="index.js"></script>
